@@ -1,2 +1,26 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+  import headshot from "$lib/assets/bwuh-resize.jpg";
+</script>
+
+<h1>Welcome to the Lonipack!</h1>
+<div class="headshot">
+  <img src={headshot} alt="The Dogfather" />
+</div>
+<p>
+  Thanks for visiting <em>lonipack.com</em>! Care to <a href="join">join</a>?
+</p>
+
+<style>
+  div.headshot {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  div.headshot > img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
+  }
+</style>

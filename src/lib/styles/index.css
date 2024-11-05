@@ -1,0 +1,13 @@
+:root {
+    font-family: monospace;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+body {
+    width: 40rem;
+    padding: 0 1rem;
+    /* margin: 0 auto; */
+}
