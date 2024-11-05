@@ -2,7 +2,7 @@
   import type { LayoutData } from "./$types";
   import type {Snippet} from "svelte"
 
-  import favicon from "$lib/assets/favicon.png";
+  import favicon from "$lib/assets/favicon.ico";
   import "$lib/styles/index.css";
 
   let { data, children }: { data: LayoutData, children: Snippet } = $props();
