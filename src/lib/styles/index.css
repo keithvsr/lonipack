@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    width: 40rem;
+    max-width: 40rem;
     padding: 0 1rem;
     /* margin: 0 auto; */
 }

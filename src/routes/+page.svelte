@@ -24,4 +24,15 @@
     object-fit: cover;
     object-position: left;
   }
+
+  @media (max-width: 600px) {
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
 </style>
