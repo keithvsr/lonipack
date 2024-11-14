@@ -10,6 +10,7 @@ FROM base AS build
 COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
 ENV NODE_ENV=production
+ARG PUBLIC_POCKETBASE_URL
 RUN npx svelte-kit sync
 RUN npm run build
 
