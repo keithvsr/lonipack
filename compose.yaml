@@ -3,5 +3,7 @@ services:
         build: .
         restart: unless-stopped
         container_name: lonipack-svelte
+        environment:
+            - PUBLIC_POCKETBASE_URL
         ports:
             - 3000:3000
