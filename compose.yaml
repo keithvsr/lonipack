@@ -1,6 +1,10 @@
 services:
     app:
-        build: .
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                - PUBLIC_POCKETBASE_URL=$PUBLIC_POCKETBASE_URL
         restart: unless-stopped
         container_name: lonipack-svelte
         environment:
